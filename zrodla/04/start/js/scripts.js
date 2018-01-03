@@ -1,8 +1,0 @@
-/*
-
-Shape
-    Rectangle
-        Square
-    Triangle
-
- */
