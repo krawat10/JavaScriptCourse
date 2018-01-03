@@ -1,0 +1,3 @@
+Jeśli narzędzie pod adresem http://regexr.com/ nie jest dostępne lub jest drastycznie różne od tego, które pokazuję w kursie - skorzystaj z jego kopii, zawartej w tym folderze.
+
+Aby wszystko mogło działać poprawnie, skopiuj ten folder i uruchom z serwera lokalnego. Informacje na temat instalacji serwera lokalnego znajdziesz w lekcjach bonusowych do tego kursu.

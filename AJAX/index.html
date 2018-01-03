@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #message.error {
+            display: block;
+            border-color: red;
+            color: red;
+        }
+
+        #message.success {
+            display: block;
+            border-color: green;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AJAX</h1>
+    <form method="POST" action="getForm.php">
+        <input type="text" name="firstName" placeholder="Type first name">
+        <input type="text" name="lastName" placeholder="Type last name">
+        <input type="submit" value="Send!">
+    </form>
+    <br> Upload:
+    <progress id="upload" value="0" max="100"></progress>
+    <br> Download:
+    <progress id="download" value="0" max="100"></progress>
+    <br>
+    <div id="message"></div>
+    <br>
+    <form method="POST" action="mail.php" id="email-form">
+        <input type="text" name="your-name" id="first-name" placeholder="Your name"><br>
+        <input type="text" name="your-email" id="email" placeholder="Youe e-mail"><br>
+        <textarea type="text" name="your-message" placeholder="Your message"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <button id="loadData" type="button">Load data</button>
+    <script src=".\JSONP.js"></script>
+    
+</body>
+
+</html>

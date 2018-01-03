@@ -1,0 +1,20 @@
+
+1. Same-origin policy - blokowanie zasobów dla witryn innego pochodzenia 
+
+Niekótre iframe mogą blokować dostęp do siebie (odwoałanie do elementów wewnątrz iframe przez js)
+Witryny w eframe (np. frame z facebooka) muszą mieć ten sam protokół, port, host
+
+Zasady:
+źródło http://eduweb.pl:80/kategorie
+
+https://eduweb.pl:80/kategorie - brak reguły wspólnego pochodzenia(https) (nie odczytami własności iframe)
+http://eduweb.pl:80/home - jest dostęp(ten sam port, host, protokół)
+http://eduweb.pl:8000/kategorie - inny port
+http://files.eduweb.pl:80/kategorie - inny host
+http://eduweb.pl/kategorie - brak hostu (ale domyślnie jest 80) zależy od przeglądarki
+http://www.eduweb.pl:80/kategorie - www - inny port
+
+Pochodzenie skryptu nie ma znaczenia ale strona na której zozstał wykonany - tak.
+
+2. CORS pozwala obejść mechanizm Same origin policy  przez co możemy wysyłać zapytania AJAX do innych domen
+W nagłówku dodane zostaie właściwość origin

@@ -1,0 +1,25 @@
+body {
+    background-color: #F4D6D6;
+
+    color: #860100;
+}
+
+h1 {
+    color: #F4343F;
+}
+
+a {
+    color: #ff0000;
+}
+
+button {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF4648;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    color: #FFE5E5;
+}
